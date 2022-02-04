@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:700');
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+
+.h3{
+  color: #fff;
+font-size: 1.5em;
+font-weight: 600;
+margin: 0px auto;
+width: 44%;
+font-family: 'Raleway', sans-serif;
+background: #062f3c;
+letter-spacing: 5px;
+padding: 12px 0px;
+text-align: center;
+}
+
+.container {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+
+.container .card {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: rgba(255, 255, 255, 0.05);
+	margin: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+}
+
+.container .card .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+.container .card:hover .content {
+	transform: translateY(-20px);
+}
+
+.container .card .content .imgBx {
+	position: relative;
+	width: 150px;
+	height: 250px;
+	overflow: hidden;
+}
+
+.container .card .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container .card .content .contentBx h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.container .card .content .contentBx h3 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+.container .card .sci {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+}
+
+.container .card .sci li {
+	list-style: none;
+	margin: 0 10px;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.container .card:hover .sci li {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.container .card .sci li a {
+	color: #fff;
+	font-size: 20px;
+}
+
+/*----------------------*/
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+*{
+  box-sizing: border-box;
+}
+
+
+.cards {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    max-width: 100%;
+}
+
+.card--1 .card__img, .card--1 .card__img--hover {
+    background-image: url(../extra-images/gallery-view1-6.jpg);
+}
+
+.card--2 .card__img, .card--2 .card__img--hover {
+    background-image: url(../extra-images/gallery-view1-1.jpg);
+}
+.card--3 .card__img, .card--3 .card__img--hover {
+  background-image: url(../extra-images/gallery-view1-2.jpg);
+}
+.card--4 .card__img, .card--4 .card__img--hover {
+  background-image: url(../extra-images/gallery-view1-3.jpg);
+}
+.card--5 .card__img, .card--5 .card__img--hover {
+  background-image: url(../extra-images/gallery-view1-4.jpg);
+}
+.card--6 .card__img, .card--6 .card__img--hover {
+  background-image: url(../extra-images/gallery-view1-5.jpg);
+}
+
+.card__like {
+    width: 18px;
+}
+
+.card__clock {
+    width: 15px;
+  vertical-align: middle;
+    fill: #AD7D52;
+}
+.card__time {
+    font-size: 12px;
+    color: #AD7D52;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.card__clock-info {
+    float: right;
+}
+
+.card__img {
+  visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+  
+}
+
+.card__info-hover {
+    position: absolute;
+    padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  position: absolute;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+top: 0;
+  
+}
+.card {
+  margin-right: 25px;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+    width: 300px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
+}
+
+.card__info {
+z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+   padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  color: #868686;
+}
+
+.card__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card__by {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.card__author {
+    font-weight: 600;
+    text-decoration: none;
+    color: #AD7D52;
+}
+
+.card:hover .card__img--hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card:hover .card__info {
+    background-color: transparent;
+    position: relative;
+}
+
+.card:hover .card__info-hover {
+    opacity: 1;
+}
+
+/*----------------------*/
+/*-----------galary----------------*/
+.containerx{
+  width: 1280px;
+  min-height: 500px; 
+  margin: 5px auto 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-size: 400% 400%;
+}
+
+.containerx .box1{
+  position: relative;
+  width: 25%;
+
+  height: 200px;
+  margin: 10px;
+  margin-left: 5%;
+ 
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.containerx .box1 .imgBox{
+  position: relative;
+  overflow: hidden;
+}
+
+.containerx .box1 .imgBox img{
+  max-width: 100%;
+  transition: transform 2s;
+}
+
+.containerx .box1:hover .imgBox img{
+  transform: scale(1.2);
+}
+
+.containerx .box .details{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, .8);
+  transform: scaleY(0);
+  transition: transform .5s;
+}
+
+.containerx .box1:hover .details{
+  transform: scaleY(1);
+}
+
+.containerx .box1 .details .content{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;color: #fff;
+}
+
+.containerx .box1 .details .content h2{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+@media screen and (min-width:900px){
+  
+
+ 
+}
+@media screen and (min-width: 850px)and (max-width: 1200px) {
+  
+
+  .containerx .box1{
+     
+      width: 35%;
+      margin-left: 2%;
+    
+      margin-top: 5%;
+      margin-bottom: 5%
+  
+  }
+
+ 
+}
+
+@media screen and  (max-width:850px) {
+  
+  
+  .containerx .box1{
+     
+      width: 50%;
+   
+      margin-left: 5%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+  }
+
+
+
+}
+
+
+
+/*-----------galary----------------*/
+
+/*---------------------------index section product card-----------*/
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400');
+
+
+
+
+.container2{
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row;
+  perspective: 1000px;
+  perspective-origin: center;
+}
+
+.col{
+  height:  100%;
+  transition: transform 600ms cubic-bezier(0.390, 0.575, 0.565, 1.000), opacity 300ms ease;
+  transform: translateZ(34px) scale(.98);
+  flex: 0 0 33.3333%; 
+  position: relative;
+}
+
+.col:nth-of-type(1){
+  transform: rotateY(5deg) translateZ(34px) scale(.98);
+}
+
+.col:nth-of-type(3){
+  transform: rotateY(-5deg) translateZ(34px) scale(.98);
+}
+
+.col:hover,
+.col:focus{
+  transform: translateZ(34px);
+  transition: transform 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000), opacity 300ms ease;
+}
+
+.card-container2{
+  position: relative;
+  width: calc(100% - 25px);
+  height:  calc(33.3% - 25px);
+  margin: 17px;
+  padding: 8px;
+  text-align: center;
+  opacity: .89;
+}
+
+.card-container2:hover,
+.card-container2:focus{
+  opacity: 1;
+}
+
+.overlay{
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+  transform: translateZ(34px);
+}
+
+.overlay:nth-of-type(1){
+  left: 0;
+  top: 0;
+}
+
+.overlay:nth-of-type(2){
+  right: 0;
+  top: 0;
+}
+
+.overlay:nth-of-type(3){
+  bottom: 0;
+  right: 0;
+}
+
+.overlay:nth-of-type(4){
+  bottom: 0;
+  left: 0;
+}
+
+.overlay:nth-of-type(1):hover ~ .card2,
+.overlay:nth-of-type(1):focus ~ .card2{
+  transform-origin: right top;
+  transform: rotateX(3deg) rotateY(-3deg) translateZ(0);
+}
+
+.overlay:nth-of-type(2):hover ~ .card2,
+.overlay:nth-of-type(2):focus ~ .card2{
+  transform-origin: left top;
+  transform: rotateX(3deg) rotateY(3deg) translateZ(0);
+}
+
+.overlay:nth-of-type(3):hover ~ .card2,
+.overlay:nth-of-type(3):focus ~ .card2{
+  transform-origin: left bottom;
+  transform: rotateX(-3deg) rotateY(3deg) translateZ(0);
+}
+
+.overlay:nth-of-type(4):hover ~ .card2,
+.overlay:nth-of-type(4):focus ~ .card2{
+  transform-origin: right bottom;
+  transform: rotateX(-3deg) rotateY(-3deg) translateZ(0);
+}
+
+.card2{
+  border-radius: 5px;
+  height: 100%;
+  transition: all 300ms ease-out;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 0;
+  opacity: .89;
+  padding: 13px 21px;
+}
+
+.card2:before,
+.card2:after{
+  content: '';
+  position: absolute;
+  left:0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: .80;
+  transition: transform 300ms ease;
+  transform: scale(.98);
+}
+
+.card2:before{
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.card-container2:hover .card2:before,
+.card-container2:hover .card2:after,
+.card-container2:focus .card2:before,
+.card-container2:focus .card2:after{
+  opacity: .34;
+  transform: scale(1);
+}
+
+.col:nth-of-type(1) .card-container2:nth-of-type(1) .card2:before{
+      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pia22474-2000.jpg?itok=cajl1lYH');
+}
+
+.col:nth-of-type(2) .card-container2:nth-of-type(1) .card2:before{
+      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m18-090.jpg?itok=TQ8Fuk4x');
+}
+
+.col:nth-of-type(3) .card-container2:nth-of-type(1) .card2:before{
+      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/40808879360_18c96d62f1_o.jpg?itok=NttmTWPK');
+}
+
+.col:nth-of-type(1) .card-container2:nth-of-type(2) .card2:before{
+      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/jwst-pv-145604copy.jpg?itok=Jq7GN-Rc');
+}
+
+.col:nth-of-type(2) .card-container2:nth-of-type(2) .card2:before{
+      background-image: url('https://www.nasa.gov/sites/default/files/styles/ubernode_alt_horiz/public/thumbnails/image/worldview201709201920x1080.png');
+}
+
+.col:nth-of-type(3) .card-container2:nth-of-type(2) .card2:before{
+      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/nasasibexobs.jpg?itok=U2LCp14i');
+}
+
+.col:nth-of-type(1) .card-container2:nth-of-type(3) .card2:before{
+      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pia19808.jpg?itok=rgxgamMM');
+}
+
+.col:nth-of-type(2) .card-container2:nth-of-type(3) .card2:before{
+      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/e0102_lg.jpg?itok=sd9lOayI');
+}
+
+.col:nth-of-type(3) .card-container2:nth-of-type(3) .card2:before{
+      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/asteroid20180605-home.jpg?itok=KSUffiCR');
+}
+
+.card2:after{
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 50%,rgba(0,0,0,0.89) 100%);
+}
+
+h4{
+  text-align: left;
+  color: rgb(244, 248, 20);
+  font-size: 18px;
+  font-weight:400;
+  transform: translateY(5px);
+  transition: transform 450ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  max-width: 320px;
+  outline: 1px solid transparent;
+}
+
+.overlay:hover ~ .card2 h4,
+.overlay:focus ~ .card2 h4{
+  transform: translateZ(144px);
+}
+
+.card2 > span{
+  font-size: 34px;
+  opacity: 0;
+  transform: translateX(-3px);
+  transition: all 300ms ease;
+}
+
+.card-container2:hover > .card2 > h4,
+.card-container2:focus > .card2 > h4{
+  transform: translateY(-13px);
+}
+
+.card-container2:hover > .card2 > span,
+.card-container2:focus > .card2 > span{
+ opacity: 1;
+    transform: translateX(3px);
+  animation: slideRight 300ms ease;
+}
+
+@media (max-width: 768px){
+  body{
+    overflow-y: scroll;
+  }
+  h4{
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 540px){
+  .container2{
+    flex-flow: column;
+    perspective: none;
+  }
+  
+  .col:nth-of-type(1),
+  .col:nth-of-type(2),
+  .col:nth-of-type(3),
+  .col:hover{
+      transform: none;
+  }
+  
+  h4{
+    padding-bottom: 8px;
+    font-size: 18px;
+  }
+  
+.card2 > span{
+      display: none;
+  }
+}
+
+@media (max-height: 599px){
+.card2 > span{
+      display: none;
+  }
+}
+
+@media (max-width: 860px) and (max-height: 540px){
+  h4{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 620px) and (max-height: 540px){
+  h4{
+    font-size: 13px;
+  }
+}
+/*---------------------------index section product card-----------*/
+
+
+
+/*  FOLLOW*/
+.Follow {	  background:url("https://pbs.twimg.com/profile_images/959092900708544512/v4Db9QRv_bigger.jpg")no-repeat center / contain;
+	width: 50px;
+	height: 50px;
+	bottom: 9px;
+	right: 20px;
+	display:block;
+	position:fixed;
+	border-radius:50%;
+	z-index:999;
+	animation:  rotation 10s infinite linear;
+	}
+
+
+
+
+
+

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>codewox club</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/contact.css" rel='stylesheet' type='text/css' />
+<link href="css/styles.css" rel='stylesheet' type='text/css' />
+
+<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'> 
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'> 
+<script src="js/jquery-1.11.0.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+</script>
+<!---- start-smoth-scrolling---->
+</head>
+<body>
+	<div class="head" id="home">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt=""></a>
+			</div>
+			<div class="header">
+				<div class="menu">
+                    <a class="toggleMenu" href="#"><img src="images/menu-icon.png" alt="" /> </a>
+					<ul class="nav" id="nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="blogs.html">Blogs</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+                    <!----start-top-nav-script---->
+		            <script type="text/javascript" src="js/responsive-nav.js"></script>
+					<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+		<!----//End-top-nav-script---->
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	
+
+		<div class="wrapper" style="background-image: url('../web/extra-images/banner-2.jpg');">
+			<div class="inner">
+				<form action="">
+					<h3>Registration Form</h3>
+					<div class="form-group">
+						<div class="form-wrapper">
+							<label for="">First Name</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="form-wrapper">
+							<label for="">Last Name</label>
+							<input type="text" class="form-control">
+						</div>
+					</div>
+					<div class="form-wrapper">
+						<label for="">Email</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-wrapper">
+						<label for="">Password</label>
+						<input type="password" class="form-control">
+					</div>
+					<div class="form-wrapper">
+						<label for="">Confirm Password</label>
+						<input type="password" class="form-control">
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> I caccept the Terms of Use & Privacy Policy.
+							<span class="checkmark"></span>
+						</label>
+					</div>
+					<button>Register Now</button>
+				</form>
+			</div>
+		</div>
+		
+		<section style="background-color: #999999;">
+		<style>
+			
+			.mySlides {
+			  display: none
+			}
+			img {
+			  vertical-align: middle;
+			}
+			.slideshow-container {
+			  max-width: 1000px;
+			  position: relative;
+			  margin: auto;
+			}
+			/* Next & previous buttons */
+			.prev,
+			.next {
+			  cursor: pointer;
+			  position: absolute;
+			  top: 50%;
+			  width: auto;
+			  padding: 16px;
+			  margin-top: -22px;
+			  color: white;
+			  font-weight: bold;
+			  font-size: 18px;
+			  transition: 0.6s ease;
+			  border-radius: 0 3px 3px 0;
+			  user-select: none;
+			}
+			/* Position the "next button" to the right */
+			.next {
+			  right: 0;
+			  border-radius: 3px 0 0 3px;
+			}
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover,
+			.next:hover {
+			  background-color: rgba(0, 0, 0, 0.8);
+			}
+			/* Caption text */
+			.text {
+			  color: #ffffff;
+			  font-size: 15px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  bottom: 8px;
+			  width: 100%;
+			  text-align: center;
+			}
+			/* Number text (1/3 etc) */
+			.numbertext {
+			  color: #ffffff;
+			  font-size: 12px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  top: 0;
+			}
+			/* The dots/bullets/indicators */
+			.dot {
+			  cursor: pointer;
+			  height: 15px;
+			  width: 15px;
+			  margin: 0 2px;
+			  background-color: #999999;
+			  border-radius: 50%;
+			  display: inline-block;
+			  transition: background-color 0.6s ease;
+			}
+			.active,
+			.dot:hover {
+			  background-color: #111111;
+			}
+			/* Fading animation */
+			.fade {
+			  -webkit-animation-name: fade;
+			  -webkit-animation-duration: 1.5s;
+			  animation-name: fade;
+			  animation-duration: 1.5s;
+			}
+			@-webkit-keyframes fade {
+			  from {
+				opacity: .4
+			  }
+			  to {
+				opacity: 1
+			  }
+			}
+			@keyframes fade {
+			  from {
+				opacity: .4
+			  }
+			  to {
+				opacity: 1
+			  }
+			}
+			/* On smaller screens, decrease text size */
+			@media only screen and (max-width: 300px) {
+			  .prev,
+			  .next,
+			  .text {
+				font-size: 11px
+			  }
+			}
+		  </style>
+		
+		
+		  <div class="slideshow-container">
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+			  <img src="../web/extra-images/blog-large-4.jpg" style="width:100%">
+			  <div class="text">London, Ebgland</div>
+			</div>
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="../web/extra-images/blog-large-2.jpg" style="width:100%">
+			  <div class="text">Sunset in Romania</div>
+			</div>
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="../web/extra-images/blog-large-3.jpg" style="width:100%">
+			  <div class="text">New York, USA</div>
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  </div>
+		  <br>
+		  <div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		  </div>
+		</section>
+		  <script>
+			var slideIndex = 0;
+			showSlides();
+			function showSlides() {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  for(i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			  }
+			  slideIndex++;
+			  if(slideIndex > slides.length) {
+				slideIndex = 1
+			  }
+			  slides[slideIndex - 1].style.display = "block";
+			  setTimeout(showSlides, 2000); // Change image every 2 seconds
+			}
+		  </script>
+		  <!--start-footer-->
+	<footer>
+		<div class="row">
+		 <div class="col span-1-of-2">
+                <ul class="social-links">
+                  <li><a href="#"> <ion-icon name="logo-facebook" class="ion-social-facebook"></ion-icon></a></li>
+					<li><a href="#"> <ion-icon name="logo-twitter" class="ion-social-twitter"></ion-icon></a></li>
+					<li><a href="#"> <ion-icon name="logo-linkedin" class="ion-social-linkedin"></ion-icon></a></li>
+				 </ul>
+           </div>
+		</div>
+           <div class="row">
+			<p>
+				copyright &copy; 2020 by Photography Masters.All right reserved.
+			</p>
+		</div>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</footer>
+	<!--end-footer-->
+	</body>
+</html>
